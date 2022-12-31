@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/kotlinDay2/app/src/main/res/layout/activity_end.xml" value="0.2026507054296708" />
         <entry key="..\:/kotlinDay2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/kotlinDay2/app/src/main/res/layout/activity_main2.xml" value="0.25951261222744765" />
         <entry key="..\:/kotlinDay2/app/src/main/res/layout/activity_start.xml" value="0.25951261222744765" />
         <entry key="..\:/kotlinDay2/app/src/main/res/layout/startPage.xml" value="0.25951261222744765" />
       </map>
