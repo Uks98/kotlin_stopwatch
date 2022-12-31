@@ -48,6 +48,7 @@
         android:id="@+id/buttonInit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#87C58A"
         android:text="처음으로"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"

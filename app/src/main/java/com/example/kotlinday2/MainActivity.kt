@@ -1,9 +1,11 @@
 package com.example.kotlinday2
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import java.lang.Math.abs
 import java.util.*
 import kotlin.concurrent.timer
@@ -56,7 +58,10 @@ class MainActivity : AppCompatActivity() {
         val textPoint = findViewById<TextView>(R.id.tv_point)
         val textPeople = findViewById<TextView>(R.id.tvPeople)
         val btnInit = findViewById<Button>(R.id.btnInit)
-
+        val bgMain = findViewById<ConstraintLayout>(R.id.bgMain)
+        val colorList = mutableListOf<String>("#32E9321E","#32E98E1E","#3287E91E","#321EBDE9",)
+        var selNum = (k-1) % 4
+        val colorSel = colorList.get(selNum) //화면 색상 변경
         var second: Int = 0
         var stage = 1
         var num: Int = 0
@@ -69,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         }
         getRandom()
 
-
+        bgMain.setBackgroundColor(Color.parseColor(colorSel))
         stopButton.setOnClickListener {
             stage ++
 
